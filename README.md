@@ -3,7 +3,7 @@
 ## Overview
 
 This is a responsive front-end To-Do app built with HTML, CSS, and JavaScript. It's designed to help you organize your daily tasks efficiently and features a user-friendly interface with stylish designs.
-- [Live Site](https://pr0g-alt.github.io/To-Do-App/)
+[Live Site](https://pr0g-alt.github.io/To-Do-App/)
 
 
 ## Features
