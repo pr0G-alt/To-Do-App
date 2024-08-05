@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-100);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main {
+  margin: 35px;
+  margin-top: 70px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#toDo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#headRow,
+.brow {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 86px;
+  gap: 15px;
+  overflow: hidden;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+#headRow {
+  align-items: center;
+  color: var(--accent-100);
+}
+
+.brow {
+  align-items: start;
+}
+
+.brow:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.brow pre {
+  top: 5px;
+}
+
+#headRow > div,
+.brow > div {
+  padding: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+#headRow > div {
+  background-color: var(--accent-200);
+}
+
+#headRow > div::selection {
+  color: var(--accent-200);
+  background-color: var(--accent-100);
+}
+
+.brow div:focus {
+  outline: none;
+}
+
+.brow:nth-child(odd) {
+  color: var(--text-200);
+}
+
+.brow:nth-child(odd) > div {
+  background-color: var(--bg-200);
+}
+
+.brow:nth-child(odd) > div::selection {
+  color: var(--bg-200);
+  background-color: var(--text-200);
+}
+
+.brow:nth-child(even) {
+  color: var(--text-100);
+}
+
+.brow:nth-child(even) > div {
+  background-color: var(--bg-300);
+}
+
+.brow:nth-child(even) > div::selection {
+  color: var(--bg-300);
+  background-color: var(--text-100);
+}
+
+#tasks {
+  margin-bottom: 35px;
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.status {
+  padding: 4px;
+  height: fit-content;
+  border: solid 3px var(--text-200);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.status:hover {
+  cursor: pointer;
+}
+
+.status div {
+  height: 10px;
+  background-color: var(--text-200);
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+.not-started {
+  width: 0;
+}
+
+.in-progress {
+  width: 50%;
+}
+
+.done {
+  width: 100%;
+}

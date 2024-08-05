@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="shortcut icon" href="Favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/addTask.css" />
+    <link rel="stylesheet" href="styles/propBtn.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="theme">
+      <div id="themeBtn">
+        <span style="background-color: var(--bg-100)"></span>
+        <span style="background-color: var(--primary-100)"></span>
+        <span style="background-color: var(--primary-200)"></span>
+        <span style="background-color: var(--accent-100)"></span>
+        <span style="background-color: var(--accent-200)"></span>
+      </div>
+      <div id="themeList"></div>
+    </div>
+
+    <main>
+      <div class="add-div">
+        <input type="text" id="taskInput" placeholder="Enter task title" />
+        <button class="btn" id="addBtn">Add Task</button>
+      </div>
+
+      <div id="toDo">
+        <div id="headRow">
+          <div class="title-cell">Title</div>
+
+          <span class="prop">
+            <li id="deleteAll"><i class="fa-solid fa-trash"></i></li>
+          </span>
+          <pre>•&NewLine;•&NewLine;•</pre>
+          <div class="status-cell">Status</div>
+        </div>
+
+        <div id="tasks"></div>
+      </div>
+    </main>
+  </body>
+</html>
