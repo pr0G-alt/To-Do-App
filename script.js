@@ -131,7 +131,7 @@ window.onload = () => {
             <li class="edit"><i class="fa-solid fa-pen-to-square"></i></li>
             <li class="delete"><i class="fa-solid fa-trash"></i></li>
         </span>
-        <pre>•&NewLine;•&NewLine;•</pre>
+        <span class="prop-btn">•<br />•<br />•</span>
         <div class="status-cell">
         <div class="status"><div class="${task.status}"></div></div>
         </div>
@@ -162,7 +162,7 @@ window.onload = () => {
   //=========================================================
 
   document.addEventListener("click", (e) => {
-    if (e.target.closest("pre")) {
+    if (e.target.closest(".prop-btn")) {
       let shown = e.target.previousElementSibling.classList.contains("show-prop");
 
       document.querySelectorAll(".prop").forEach((prop) => {
@@ -171,7 +171,7 @@ window.onload = () => {
       if (!shown) e.target.previousElementSibling.classList.add("show-prop");
     }
 
-    if (!e.target.closest("pre")) {
+    if (!e.target.closest(".prop-btn")) {
       document.querySelectorAll(".prop").forEach((prop) => {
         prop.classList.remove("show-prop");
       });

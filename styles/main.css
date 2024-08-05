@@ -58,10 +58,6 @@ main {
   margin-bottom: 20px;
 }
 
-.brow pre {
-  top: 5px;
-}
-
 #headRow > div,
 .brow > div {
   padding: 20px;

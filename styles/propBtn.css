@@ -1,4 +1,4 @@
-pre {
+.prop-btn {
   user-select: none;
   line-height: 7px;
   position: absolute;
@@ -6,7 +6,11 @@ pre {
   padding: 2px;
 }
 
-pre:hover {
+.brow .prop-btn {
+  top: 30%;
+}
+
+.prop-btn:hover {
   cursor: pointer;
 }
 
