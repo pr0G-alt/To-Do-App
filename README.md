@@ -3,7 +3,7 @@
 ## Overview
 
 This is a responsive front-end To-Do app built with HTML, CSS, and JavaScript. It's designed to help you organize your daily tasks efficiently and features a user-friendly interface with stylish designs.
-[Preview](https://pr0g-alt.github.io/To-Do-App/)
+[Preview](https://yousseftawakal.github.io/To-Do-App/)
 
 
 ## Features
@@ -18,7 +18,7 @@ This is a responsive front-end To-Do app built with HTML, CSS, and JavaScript. I
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/pr0G-alt/To-Do-App.git
+   git clone https://github.com/yousseftawakal/To-Do-App.git
    ```
 
 2. **Navigate to the Project Directory:**
